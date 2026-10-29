@@ -1,0 +1,48 @@
+# ============================================================
+# waveda_rag 知识库数据源配置
+# 每次添加新文档后，运行 scripts/build_knowledge_base.py 重新索引
+# 单文件追加: python scripts/add_document.py <文件路径>
+# ============================================================
+
+sources:
+  # ---- 团队自编教程 ----
+  - path: ./knowledge_base/01_team_tutorials/
+    type: markdown
+    desc: "团队自编教程与FAQ"
+    recursive: true
+
+  # ---- 软件功能手册（从官方HTML帮助提取） ----
+  - path: ./knowledge_base/02_software_manual/
+    type: markdown
+    desc: "wavEDA软件功能手册"
+    recursive: true
+
+  # ---- 仿真案例 ----
+  - path: ./knowledge_base/03_examples/
+    type: markdown
+    desc: "仿真案例库"
+    recursive: true
+
+  # ---- 错误排查 ----
+  - path: ./knowledge_base/04_error_cases/
+    type: markdown
+    desc: "错误案例与排查指南"
+    recursive: true
+
+  # ---- 参考资料 ----
+  - path: ./knowledge_base/05_reference/
+    type: markdown
+    desc: "参考材料（索引/专题/材料库/模板）"
+    recursive: true
+
+  # ---- 理论笔记 ----
+  - path: ./knowledge_base/06_theory_notes/
+    type: markdown
+    desc: "多物理场理论笔记（Obsidian vault内容）"
+    recursive: true
+
+  # ---- 脚本自动化 ----
+  - path: ./knowledge_base/07_scripting_automation_all/
+    type: markdown
+    desc: "WavEDA脚本生成、批量仿真编排与故障恢复"
+    recursive: true
