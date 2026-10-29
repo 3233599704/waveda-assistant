@@ -1,2 +1,59 @@
-# waveda-assistant
-Sanitized portfolio source for a team-built desktop RAG assistant and simulation automation toolkit.
+# WavEDA Assistant
+
+面向多物理场仿真软件初学者的桌面知识助手。这个仓库是企业实践团队项目的脱敏源码作品集，展示文档检索、带来源的问答、知识库维护和仿真脚本生成的工程实现。
+
+## 项目与个人贡献
+
+原项目由团队协作完成，内部远程仓库登记为 `631-lsn/waveda_rag`。本仓库不是团队项目全部代码均由个人独立创作的声明，也不替代原团队仓库。
+
+姚权树参与后端问答与知识库的主要开发，以及部分前端开发、联调和双版本交付。项目总体功能与个人贡献应分别理解；不把代码行数、提交次数或团队整体成果自动归为个人独立成果。开发过程中使用了 AI 辅助工具。
+
+## 主要功能
+
+- 文档加载、分块、本地索引与检索，回答保留来源。
+- PySide6 桌面交互、会话与收藏、知识库维护入口。
+- 可配置的大模型接口，以及无 API 密钥时的本地检索路径。
+- 用户版和维护版的知识管理权限区分。
+- 生成 Python 或 MATLAB 控制脚本及任务包；运行真实仿真需要另行安装并获授权使用 WavEDA。
+
+脚本生成与静态校验不等于每一种模型都完成了求解器端到端验证。可选语义嵌入也不等于已经证明优于默认检索方案。
+
+## 公开版与原交付版的区别
+
+本仓库只包含经过筛选的代码、测试和自行编写的最小示例知识文档。不包含企业官方帮助全文、团队内部知识库、真实工程文件、运行环境、EXE、API 密钥、会话记录、个人笔记或索引数据库。
+
+原交付版的知识覆盖范围与检索评测结果不能直接套用于这个最小公开语料。公开示例用于演示检索流程，不是软件官方操作手册。
+
+## 运行
+
+需要 Python 3.11+；桌面界面需要安装 `requirements.txt` 中的依赖。
+
+```bash
+python -m venv .venv
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+Copy-Item config/.env.example config/.env
+python scripts/build_knowledge_base.py
+python app/desktop_app.py
+```
+
+示例配置对极小公开语料将检索门槛设为 0，仅便于检查流程；用于真实知识库时应重新校准门槛，不能将任意检索结果视为可靠证据。如需大模型问答，在本机 `config/.env` 填写密钥。不要提交填好密钥的配置文件。首次演示可不设置 API 密钥，仅使用本地检索。
+
+核心测试需要额外安装 pytest：
+
+```bash
+python -m pytest tests
+```
+
+部分 GUI 测试需要 PySide6。依赖原企业知识库的两个集成评测文件默认明确跳过，不计为通过；另行取得原语料授权并构建索引后，可加 `--with-proprietary-corpus` 运行。公开版测试结果不能作为原企业知识库命中率的证明。
+
+## 架构
+
+```text
+本地文档 -> 加载和分块 -> 本地索引 -> 检索 -> 带来源的回答
+                                             -> 可选大模型接口
+桌面界面 -> 知识管理 / 会话管理 / 脚本任务包生成
+```
+
+详见 [权利与来源说明](RIGHTS.md) 和 [安全边界](SECURITY.md)。
