@@ -1,0 +1,363 @@
+{
+  "version": 1,
+  "description": "检索质量评测集。每条：question=用户真实问法，expected_paths=任一命中即算对的文档 relative_path。out_of_scope=true 的题目不计入命中率，用于验证分数门槛（A6）。",
+  "questions": [
+    {
+      "id": 1,
+      "question": "波端口怎么设置？",
+      "expected_paths": [
+        "01_team_tutorials/tutorials/01_电磁模块/01_端口设置.md",
+        "02_software_manual/Modeling/Stimulate/Wave_Port.md",
+        "Modeling/Stimulate/Wave_Port.html"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "集总端口和波端口有什么区别？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Stimulate/Lumped_Port.md",
+        "Modeling/Stimulate/Lumped_Port.html",
+        "01_team_tutorials/tutorials/01_电磁模块/01_端口设置.md"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "PML 吸收边界怎么设置？",
+      "expected_paths": [
+        "01_team_tutorials/tutorials/01_电磁模块/03_边界条件.md",
+        "02_software_manual/EM_Project/Boundary.md",
+        "EM_Project/Boundary.html"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "仿真报错说端口和 PML 冲突怎么办？",
+      "expected_paths": [
+        "01_team_tutorials/03_错误排查指南.md",
+        "01_team_tutorials/02_常见问题FAQ.md",
+        "04_error_cases/error_message_index.md"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "自适应网格和手动网格怎么选？",
+      "expected_paths": [
+        "02_software_manual/Mesh/Adaptive_Mesh.md",
+        "Mesh/Adaptive_Mesh.html",
+        "02_software_manual/Mesh/Mesh.md",
+        "Mesh/Mesh.html"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "求解器类型怎么选？",
+      "expected_paths": [
+        "01_team_tutorials/tutorials/01_电磁模块/04_求解器设置.md",
+        "02_software_manual/Modeling/Design/Solver.md",
+        "Modeling/Design/Solver.html"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "有没有微环谐振器的仿真案例？",
+      "expected_paths": ["01_team_tutorials/tutorials/02_案例/01_微环谐振器仿真.md"]
+    },
+    {
+      "id": 8,
+      "question": "Y 分支波导怎么仿真？",
+      "expected_paths": ["01_team_tutorials/tutorials/02_案例/02_Y分支波导仿真.md"]
+    },
+    {
+      "id": 9,
+      "question": "有没有快捷键列表？",
+      "expected_paths": [
+        "02_software_manual/EM_Project/HotKey.md",
+        "EM_Project/HotKey.html"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "怎么创建一个棱柱？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Create_3D_Geometry/Prism.md",
+        "Modeling/Create_3D_Geometry/Prism.html"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "两个物体怎么做布尔相减？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Model_Editing/Boolean.md",
+        "Modeling/Model_Editing/Boolean.html"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "怎么导出 S 参数文件？",
+      "expected_paths": [
+        "02_software_manual/Tool/Export_Snp.md",
+        "Tool/Export_Snp.html"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "天线远场方向图在哪里看？",
+      "expected_paths": [
+        "02_software_manual/EM_Project/Far_field.md",
+        "EM_Project/Far_field.html"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "怎么添加自定义材料？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Bkg_Mat/Materials.md",
+        "Modeling/Bkg_Mat/Materials.html"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "有没有微带贴片天线的例子？",
+      "expected_paths": ["03_examples/EM/PBC/Antenna/microstrip_patch_antenna.md"]
+    },
+    {
+      "id": 16,
+      "question": "频率选择表面 FSS 怎么建模？",
+      "expected_paths": ["03_examples/EM/PBC/FSS/FSS_unit.md"]
+    },
+    {
+      "id": 17,
+      "question": "威尔金森功分器有案例吗？",
+      "expected_paths": [
+        "03_examples/Circuit/Wilkinson power divider/Wilkinson power divider/Wilkinson power divider.md"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "平面波激励怎么加？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Stimulate/Plane_Wave.md",
+        "Modeling/Stimulate/Plane_Wave.html"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "怎么用变量做参数化建模？",
+      "expected_paths": [
+        "02_software_manual/Tool/Variables.md",
+        "Tool/Variables.html"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "参数扫描在哪里设置？",
+      "expected_paths": [
+        "02_software_manual/Simulation/Parameter_Sweep.md",
+        "Simulation/Parameter_Sweep.html"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "散热器热仿真有案例吗？",
+      "expected_paths": ["03_examples/Thermal/Radiator/Radiator/Radiator.md"]
+    },
+    {
+      "id": 22,
+      "question": "PBGA 封装的热仿真怎么做？",
+      "expected_paths": ["03_examples/Multi-Physics/PBGA/PBGA/PBGA.md"]
+    },
+    {
+      "id": 23,
+      "question": "麦克斯韦方程组的微分形式是什么？",
+      "expected_paths": [
+        "06_theory_notes/01_电磁与射频/_金建铭Theory_and_Computation_of_Electromagnetic_Fields_2nd_edition__Jian-Ming_Jin_2015.md"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "仿真一直不收敛，该怎么排查？",
+      "expected_paths": [
+        "01_team_tutorials/03_错误排查指南.md",
+        "01_team_tutorials/02_常见问题FAQ.md",
+        "04_error_cases/error_message_index.md"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "怎么看电场分布图？",
+      "expected_paths": [
+        "02_software_manual/EM_Project/Field_Result.md",
+        "EM_Project/Field_Result.html",
+        "02_software_manual/EM_Project/EM_Results.md",
+        "EM_Project/EM_Results.html"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "设计单位在哪里改？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Design/Unit.md",
+        "Modeling/Design/Unit.html"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "局部坐标系怎么建立？",
+      "expected_paths": [
+        "02_software_manual/Modeling/LCS.md",
+        "Modeling/LCS.html"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "怎么把画好的面拉伸成体？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Model_Editing/Extrusion.md",
+        "Modeling/Model_Editing/Extrusion.html"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "怎么给棱边倒圆角？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Model_Editing/Blend_Edges.md",
+        "Modeling/Model_Editing/Blend_Edges.html"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "波端口的积分线是干什么用的？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Stimulate/Integration_Line.md",
+        "Modeling/Stimulate/Integration_Line.html"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "激励应该从哪里加进模型里？",
+      "expected_paths": [
+        "01_team_tutorials/tutorials/01_电磁模块/02_激励源配置.md",
+        "01_team_tutorials/tutorials/01_电磁模块/01_端口设置.md"
+      ],
+      "note": "改写题：不出现“端口”"
+    },
+    {
+      "id": 32,
+      "question": "怎样让电磁波在计算区域边缘被吸收掉，不要反射回来？",
+      "expected_paths": [
+        "01_team_tutorials/tutorials/01_电磁模块/03_边界条件.md",
+        "02_software_manual/EM_Project/Boundary.md",
+        "EM_Project/Boundary.html"
+      ],
+      "note": "改写题：不出现 PML/边界条件"
+    },
+    {
+      "id": 33,
+      "question": "我画了一个平面图形，想把它变成三维实体",
+      "expected_paths": [
+        "02_software_manual/Modeling/Model_Editing/Extrusion.md",
+        "Modeling/Model_Editing/Extrusion.html"
+      ],
+      "note": "改写题：不出现“拉伸”"
+    },
+    {
+      "id": 34,
+      "question": "计算跑得太慢了，是不是网格剖得太密了，怎么调整？",
+      "expected_paths": [
+        "02_software_manual/Mesh/Mesh.md",
+        "Mesh/Mesh.html",
+        "02_software_manual/Mesh/Adaptive_Mesh.md",
+        "Mesh/Adaptive_Mesh.html",
+        "02_software_manual/Mesh/3D_Mesh.md",
+        "Mesh/3D_Mesh.html"
+      ],
+      "note": "改写题：口语化"
+    },
+    {
+      "id": 35,
+      "question": "想看看我设计的天线增益怎么样",
+      "expected_paths": [
+        "02_software_manual/EM_Project/Far_field.md",
+        "EM_Project/Far_field.html",
+        "02_software_manual/EM_Project/EM_Results.md",
+        "EM_Project/EM_Results.html"
+      ],
+      "note": "改写题：增益→远场"
+    },
+    {
+      "id": 36,
+      "question": "怎么把两个零件合并成一个整体？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Model_Editing/Boolean.md",
+        "Modeling/Model_Editing/Boolean.html"
+      ],
+      "note": "改写题：不出现“布尔”"
+    },
+    {
+      "id": 37,
+      "question": "仿真的工作频率范围在哪里填？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Design/Frequency.md",
+        "Modeling/Design/Frequency.html",
+        "01_team_tutorials/tutorials/01_电磁模块/04_求解器设置.md"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "怎么把模型转一个角度摆放？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Model_Editing/Rotate.md",
+        "Modeling/Model_Editing/Rotate.html"
+      ],
+      "note": "改写题：不出现“旋转”"
+    },
+    {
+      "id": 39,
+      "question": "同轴馈电在软件里应该怎么建模？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Stimulate/Lumped_Port.md",
+        "Modeling/Stimulate/Lumped_Port.html",
+        "01_team_tutorials/tutorials/01_电磁模块/01_端口设置.md"
+      ],
+      "note": "改写题：馈电→端口"
+    },
+    {
+      "id": 40,
+      "question": "介电常数随频率变化的材料要怎么定义？",
+      "expected_paths": [
+        "02_software_manual/Modeling/Bkg_Mat/Dielectric_Dispersion.md",
+        "Modeling/Bkg_Mat/Dielectric_Dispersion.html",
+        "02_software_manual/Modeling/Bkg_Mat/Materials.md",
+        "Modeling/Bkg_Mat/Materials.html"
+      ],
+      "note": "改写题：不出现“色散”"
+    },
+    {
+      "id": 41,
+      "question": "芯片封装后发热厉害，想做电热联合仿真，有参考例子吗？",
+      "expected_paths": [
+        "03_examples/Multi-Physics/PBGA/PBGA/PBGA.md",
+        "03_examples/Multi-Physics/PKG_WB_Model/PKG_WB_Model/PKG_WB_Model.md"
+      ],
+      "note": "改写题：不出现 PBGA"
+    },
+    {
+      "id": 101,
+      "question": "怎么做红烧肉？",
+      "expected_paths": [],
+      "out_of_scope": true
+    },
+    {
+      "id": 102,
+      "question": "帮我写一首关于秋天的诗",
+      "expected_paths": [],
+      "out_of_scope": true
+    },
+    {
+      "id": 103,
+      "question": "Python 怎么读写 Excel 文件？",
+      "expected_paths": [],
+      "out_of_scope": true
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "question": "How do I configure a wave port?",
+      "expected": ["Wave_Port.md"]
+    },
+    {
+      "question": "How do I configure a lumped port?",
+      "expected": ["Lumped_Port.md"]
+    },
+    {
+      "question": "How do I configure plane wave excitation?",
+      "expected": ["Plane_Wave.md"]
+    },
+    {
+      "question": "What is the relationship between PML and absorbing boundary?",
+      "expected": ["Boundary.md"]
+    },
+    {
+      "question": "How do PEC and PMC boundaries differ?",
+      "expected": ["Boundary.md"]
+    },
+    {
+      "question": "How should I troubleshoot a missing-material simulation error?",
+      "expected": ["01_team_tutorials/03_"]
+    },
+    {
+      "question": "How do I set material permittivity and loss tangent?",
+      "expected": ["Materials.md"]
+    },
+    {
+      "question": "How do I troubleshoot an adaptive mesh failure?",
+      "expected": ["Adaptive_Mesh.md"]
+    },
+    {
+      "question": "Why does the solver fail to converge?",
+      "expected": ["Solver.md"]
+    },
+    {
+      "question": "How do I troubleshoot a simulation license error?",
+      "expected": ["Options.md"]
+    },
+    {
+      "question": "How do I export S-parameters or find the generated SNP file?",
+      "expected": ["Export_Snp.md"]
+    },
+    {
+      "question": "How do I export a Touchstone file?",
+      "expected": ["Export_Snp.md"]
+    },
+    {
+      "question": "How do I inspect far field results?",
+      "expected": ["EM_Results.md"]
+    },
+    {
+      "question": "How do I create an observer and export its result?",
+      "expected": ["Observer.md"]
+    },
+    {
+      "question": "How do I run an XML parameter sweep?",
+      "expected": ["Parameter_Sweep.md"]
+    }
+  ]
+}
